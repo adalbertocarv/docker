@@ -14,11 +14,12 @@
 ## Criação de volumes
 --> Os volumes que permitiram aos containers acesso aos arquivos da solução podem ser criados com :
 '''sh
-	docker volume create --name vol_postgis_dfnoponto --opt type=none --opt device=C:\dfnoponto\postgis-dfnoponto --opt o=bind
-	docker volume create --name vol_nginx_conf_dfnoponto --opt type=none --opt device=C:\dfnoponto\fontend-dfnoponto\conf --opt o=bind
-	docker volume create --name vol_nginx_web_dfnoponto --opt type=none --opt device=C:\dfnoponto\fontend-dfnoponto\web --opt o=bind
-	docker volume create --name vol_service_app_dfnoponto --opt type=none --opt device=C:\dfnoponto\backend-dfnoponto\app --opt o=bind
-	docker volume create --name vol_service_log_dfnoponto --opt type=none --opt device=C:\dfnoponto\backend-dfnoponto\log --opt o=bind
+	docker volume create --name vol_postgis_dfnoponto --opt type=none --opt device=/home/appmob/docker/postgis-dfnoponto --opt o=bind
+	docker volume create --name vol_nginx_conf_dfnoponto --opt type=none --opt device=/home/appmob/docker/fontend-dfnoponto/conf --opt o=bind
+	docker volume create --name vol_nginx_web_dfnoponto --opt type=none --opt device=/home/appmob/docker/fontend-dfnoponto/web --opt o=bind
+	docker volume create --name vol_service_app_dfnoponto --opt type=none --opt device=/home/appmob/docker/backend-dfnoponto/app --opt o=bind
+	docker volume create --name vol_service_log_dfnoponto --opt type=none --opt device=/home/appmob/docker/backend-dfnoponto/log --opt o=bind
+
 '''
 
 ## Inicialização da stack :
