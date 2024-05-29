@@ -17,16 +17,16 @@
 
 
 
-    docker volume create --name vol_postgis_dfnoponto --opt type=none --opt device=/home/wubuntu/docker/postgis-dfnoponto --opt o=bind
-    docker volume create --name vol_nginx_conf_dfnoponto --opt type=none --opt device=/home/wubuntu/docker/frontend-dfnoponto/conf --opt o=bind
-    docker volume create --name vol_nginx_web_dfnoponto --opt type=none --opt device=/home/wubuntu/docker/frontend-dfnoponto/web --opt o=bind
-    docker volume create --name vol_service_app_dfnoponto --opt type=none --opt device=/home/wubuntu/docker/backend-dfnoponto/app --opt o=bind
-    docker volume create --name vol_service_log_dfnoponto --opt type=none --opt device=/home/wubuntu/docker/backend-dfnoponto/log --opt o=bind
+    docker volume create --name vol_postgis_dfnoponto --opt type=none --opt device=/home/ubuntu/docker/postgis-dfnoponto --opt o=bind
+    docker volume create --name vol_nginx_conf_dfnoponto --opt type=none --opt device=/home/ubuntu/docker/frontend-dfnoponto/conf --opt o=bind
+    docker volume create --name vol_nginx_web_dfnoponto --opt type=none --opt device=/home/ubuntu/docker/frontend-dfnoponto/web --opt o=bind
+    docker volume create --name vol_service_app_dfnoponto --opt type=none --opt device=/home/ubuntu/docker/backend-dfnoponto/app --opt o=bind
+    docker volume create --name vol_service_log_dfnoponto --opt type=none --opt device=/home/ubuntu/docker/backend-dfnoponto/log --opt o=bind
     
     
-    mkdir -p /home/wubuntu/docker/frontend-dfnoponto/conf
+    mkdir -p /home/ubuntu/docker/frontend-dfnoponto/conf
 
-    mkdir -p /home/wubuntu/docker/frontend-dfnoponto/web
+    mkdir -p /home/ubuntu/docker/frontend-dfnoponto/web
 
 
 
